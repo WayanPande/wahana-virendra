@@ -29,7 +29,7 @@ const PassangerDropDown: React.FC<IProps> = ({ state, toggleState }) => {
   };
 
   return (
-    <div className="xl:w-1/2 h-24 rounded-xl bg-blue-wahana-light p-3 w-full lg:w-fit grow relative cursor-pointer">
+    <div className="xl:w-1/2 h-24 rounded-xl bg-blue-wahana-light p-3 w-full lg:w-fit grow relative cursor-pointer hover:bg-[#BCF3FC]">
       <div onClick={toggleState}>
         <span className="text-xs text-gray-wahana">TRAVELER</span>
         <p className="text-sm font-bold">

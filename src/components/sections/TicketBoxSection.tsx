@@ -21,7 +21,7 @@ const TicketBoxSection = () => {
   return (
     <>
       <div
-        className="w-full md:w-[80%] lg:w-[85%] xl:w-[60%] 2xl:w-[55%] bg-white absolute left-1/2 -translate-x-1/2 top-[20rem] lg:top-[32rem] rounded-2xl shadow-md px-5 py-12 flex flex-col gap-10 z-50 "
+        className=" w-[95%] md:w-[80%] lg:w-[85%] xl:w-[60%] 2xl:w-[55%] bg-white absolute left-1/2 -translate-x-1/2 top-[20rem] lg:top-[32rem] rounded-2xl shadow-md px-5 py-12 flex flex-col gap-10 z-50 "
         onClick={() => toggleBackdrop(true)}
       >
         <div className="flex justify-between">
