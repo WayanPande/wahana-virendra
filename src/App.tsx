@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import TicketBoxSection from "./components/TicketBoxSection";
-import PromoSection from "./components/PromoSection";
-import HotDealsSection from "./components/HotDealsSection";
-import ReasonsSection from "./components/ReasonsSection";
-import CustomerFeedbackSection from "./components/CustomerFeedbackSection";
-import PaymentSection from "./components/PaymentSection";
-import FooterSection from "./components/FooterSection";
-import HeroSection from "./components/HeroSection";
+import CustomerFeedbackSection from "./components/sections/CustomerFeedbackSection";
+import FooterSection from "./components/sections/FooterSection";
+import HeroSection from "./components/sections/HeroSection";
+import HotDealsSection from "./components/sections/HotDealsSection";
+import PaymentSection from "./components/sections/PaymentSection";
+import PromoSection from "./components/sections/PromoSection";
+import ReasonsSection from "./components/sections/ReasonsSection";
+import TicketBoxSection from "./components/sections/TicketBoxSection";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-import Laptop from "../assets/laptop.png";
+import Laptop from "../../assets/laptop.png";
 
 const ReasonsSection = () => {
   return (

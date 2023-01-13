@@ -1,5 +1,5 @@
-import Hero from "../assets/hero.png";
-import HeroBottom from "../assets/hero-bottom.png";
+import Hero from "../../assets/hero.png";
+import HeroBottom from "../../assets/hero-bottom.png";
 import { useWindowScroll } from "react-use";
 
 const HeroSection = () => {

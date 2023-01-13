@@ -1,4 +1,4 @@
-import Pantai from "../assets/pantai.png";
+import Pantai from "../../assets/pantai.png";
 
 const PromoSection = () => {
   return (

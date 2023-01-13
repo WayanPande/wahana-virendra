@@ -3,12 +3,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper";
-import PersonOne from "../assets/person-one.png";
-import PersonTwo from "../assets/person-two.png";
-import PersonThree from "../assets/person-three.png";
-import CustomerCard from "./CustomerCard";
-import CustomerFeedbackIcon from "../assets/customer-feedback.png";
+import PersonOne from "../../assets/person-one.png";
+import PersonTwo from "../../assets/person-two.png";
+import PersonThree from "../../assets/person-three.png";
+import CustomerFeedbackIcon from "../../assets/customer-feedback.png";
 import { useWindowSize } from "react-use";
+import CustomerCard from "../CustomerCard";
 
 const CustomerFeedbackSection = () => {
   const { width, height } = useWindowSize();

@@ -1,4 +1,4 @@
-import Payment from "../assets/payment.png";
+import Payment from "../../assets/payment.png";
 
 const PaymentSection = () => {
   return (

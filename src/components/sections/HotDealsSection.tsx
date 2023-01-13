@@ -1,8 +1,8 @@
-import Pantai from "../assets/pantai.png";
-import Janur from "../assets/janur.png";
-import Dive from "../assets/dive.png";
-import Family from "../assets/family.png";
-import HotDealsCard from "./HotDealsCard";
+import Pantai from "../../assets/pantai.png";
+import Janur from "../../assets/janur.png";
+import Dive from "../../assets/dive.png";
+import Family from "../../assets/family.png";
+import HotDealsCard from "../HotDealsCard";
 
 const HotDealsSection = () => {
   return (
