@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Ship from "../../assets/ship.png";
 import Transfer from "../../assets/transfer.png";
+// @ts-ignore
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useToggle } from "react-use";
