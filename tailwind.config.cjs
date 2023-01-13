@@ -20,6 +20,16 @@ module.exports = {
         'footer-texture': "url('./assets/footer.png')",
         'section-texture': "url('./assets/bg-section.png')",
         'payment-texture': "url('./assets/payment-section.png')"
+      },
+      keyframes: {
+        modalOpen: {
+          '0%': { right: "-100%" },
+          '100%': { right: "0px" }
+        },
+        modalClose: {
+          '0%': { right: "0px" },
+          '100%': { right: "-100%" }
+        }
       }
     },
   },

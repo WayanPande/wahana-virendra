@@ -6,9 +6,11 @@ import HotDealsCard from "./HotDealsCard";
 
 const HotDealsSection = () => {
   return (
-    <div className="mt-80 flex items-center flex-col mx-20 2xl:mx-56 gap-10">
-      <h1 className="self-start text-4xl font-bold">🔥 Hot Deals</h1>
-      <div className="flex justify-between w-full gap-7">
+    <div className="mt-72 lg:mt-80 flex items-center flex-col mx-3 md:mx-10 lg:mx-20 2xl:mx-56 gap-10">
+      <h1 className="xl:self-start self-center text-2xl xl:text-4xl font-bold">
+        🔥 Hot Deals
+      </h1>
+      <div className="flex flex-col md:flex-row justify-between md:justify-evenly w-full gap-7 md:flex-wrap xl:flex-nowrap">
         <HotDealsCard
           key={1}
           title="50% Discount"

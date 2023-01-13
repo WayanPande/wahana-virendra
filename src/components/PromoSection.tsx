@@ -2,9 +2,9 @@ import Pantai from "../assets/pantai.png";
 
 const PromoSection = () => {
   return (
-    <div className="mt-80 flex gap-5 justify-between mx-20 2xl:mx-56">
-      <div className="flex bg-yellow-wahana-light w-[35rem] rounded-lg">
-        <img src={Pantai} className="rounded-lg h-[20.75rem]" alt="pantai" />
+    <div className="mt-[39rem] lg:mt-96 flex flex-col xl:flex-row gap-5 justify-between mx-3 md:mx-10 lg:mx-20 2xl:mx-56">
+      <div className="flex bg-yellow-wahana-light xl:w-[35rem] rounded-lg">
+        <img src={Pantai} className="rounded-lg xl:h-[20.75rem]" alt="pantai" />
         <div className="p-5 flex justify-between flex-col">
           <div className="flex flex-col gap-3 ">
             <h3 className="font-bold text-2xl">Special Promo</h3>
@@ -17,7 +17,7 @@ const PromoSection = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col md:flex-row xl:flex-col gap-3">
         <div className="flex bg-[#D6FFE1] w-full h-full rounded-lg">
           <img src={Pantai} className="rounded-lg h-40" alt="pantai" />
           <div className="p-3 flex justify-between flex-col">
@@ -43,8 +43,8 @@ const PromoSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-[#EEFCFF] w-[35rem] rounded-lg">
-        <img src={Pantai} className="rounded-lg h-[20.75rem]" alt="pantai" />
+      <div className="flex bg-[#EEFCFF] xl:w-[35rem] rounded-lg">
+        <img src={Pantai} className="rounded-lg xl:h-[20.75rem]" alt="pantai" />
         <div className="p-5 flex justify-between flex-col">
           <div className="flex flex-col gap-3 ">
             <h3 className="font-bold text-2xl">Special Promo</h3>

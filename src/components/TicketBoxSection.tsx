@@ -8,7 +8,7 @@ const TicketBoxSection = () => {
   const [startDate, setStartDate] = useState(new Date());
 
   return (
-    <div className="xl:w-[60%] 2xl:w-[55%] bg-white absolute left-1/2 -translate-x-1/2 top-[32rem] rounded-2xl shadow-md px-5 py-12 flex flex-col gap-10 z-30">
+    <div className="w-full md:w-[80%] lg:w-[85%] xl:w-[60%] 2xl:w-[55%] bg-white absolute left-1/2 -translate-x-1/2 top-[20rem] lg:top-[32rem] rounded-2xl shadow-md px-5 py-12 flex flex-col gap-10 z-30 ">
       <div className="flex justify-between">
         <button className="rounded-full px-5 py-1 border-2 border-yellow-wahana flex gap-3">
           <img src={Ship} className="w-5" alt="ship" />
@@ -52,10 +52,10 @@ const TicketBoxSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-3">
-        <div className="flex gap-4 w-fit grow">
-          <div className="xl:w-52 2xl:w-60 h-24 rounded-xl bg-blue-wahana-light pl-3 py-1 flex flex-col justify-center">
-            <div className="flex justify-between items-end pr-7">
+      <div className="flex gap-3 flex-col lg:flex-row">
+        <div className="flex gap-1 lg:gap-4 w-full lg:w-fit  flex-col lg:flex-row">
+          <div className="lg:w-52 2xl:w-60 h-24 rounded-xl bg-blue-wahana-light pl-3 py-1 pr-3 lg:pr-5 xl:pr-0 flex flex-col justify-center">
+            <div className="flex justify-between items-end xl:pr-7">
               <div>
                 <span className="text-xs text-gray-wahana">FROM</span>
                 <p className="text-sm font-bold">Padangbai</p>
@@ -66,10 +66,14 @@ const TicketBoxSection = () => {
               Padangbai Port, Karangasem, bali
             </p>
           </div>
-          <div className="w-12 h-12 border-4 border-white bg-blue-wahana-light rounded-full absolute xl:left-[13.2rem] 2xl:left-[15.3rem] top-[9.2rem] flex justify-center items-center">
-            <img src={Transfer} alt="transfer" />
+          <div className="w-12 h-12 border-4 border-white bg-blue-wahana-light rounded-full absolute right-8 lg:left-[13.2rem] 2xl:left-[15.3rem] top-48 lg:top-[9.2rem] flex justify-center items-center">
+            <img
+              src={Transfer}
+              className="rotate-90 lg:rotate-0"
+              alt="transfer"
+            />
           </div>
-          <div className="xl:w-52 2xl:w-60 h-24 rounded-xl bg-blue-wahana-light pl-7 pr-3 py-1 flex flex-col justify-center">
+          <div className="lg:w-52 2xl:w-60 h-24 rounded-xl bg-blue-wahana-light pl-3 lg:pl-7 pr-3 py-1 flex flex-col justify-center">
             <div className="flex justify-between items-end">
               <div>
                 <span className="text-xs text-gray-wahana">TO</span>
@@ -82,7 +86,7 @@ const TicketBoxSection = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-fit rounded-xl bg-blue-wahana-light grow flex justify-evenly divide-x divide-blue-wahana overflow-hidden">
+        <div className="w-full lg:w-fit xl:w-full h-fit rounded-xl bg-blue-wahana-light grow flex justify-evenly divide-x divide-blue-wahana overflow-hidden">
           <DatePicker
             selected={startDate}
             onChange={(date: Date) => setStartDate(date)}
@@ -120,7 +124,7 @@ const TicketBoxSection = () => {
             }
           />
         </div>
-        <div className="w-1/2 h-24 rounded-xl bg-blue-wahana-light p-3  grow-0">
+        <div className="xl:w-1/2 h-24 rounded-xl bg-blue-wahana-light p-3 w-full lg:w-fit grow">
           <span className="text-xs text-gray-wahana">TRAVELER</span>
           <p className="text-sm font-bold">1 Traveler</p>
           <p className="text-xs text-gray-wahana mt-2 truncate ...">Economy</p>

@@ -8,19 +8,32 @@ import PersonTwo from "../assets/person-two.png";
 import PersonThree from "../assets/person-three.png";
 import CustomerCard from "./CustomerCard";
 import CustomerFeedbackIcon from "../assets/customer-feedback.png";
+import { useWindowSize } from "react-use";
 
 const CustomerFeedbackSection = () => {
+  const { width, height } = useWindowSize();
+
+  const slidesCount = (): number => {
+    if (width >= 1440) {
+      return 3;
+    } else if (width >= 1024) {
+      return 2;
+    }
+
+    return 1;
+  };
+
   return (
-    <div className="mt-80 mx-20 2xl:mx-56">
+    <div className="mt-32 xl:mt-80 mx-3 md:mx-10 lg:mx-20 2xl:mx-56">
       <div className="flex items-center gap-7">
         <img src={CustomerFeedbackIcon} alt="" />
-        <h1 className="font-bold text-4xl">Our Customer Feedback</h1>
+        <h1 className="font-bold text-xl lg:text-4xl">Our Customer Feedback</h1>
       </div>
       <div className="mt-10">
         <Swiper
           modules={[Pagination, Autoplay]}
           autoplay
-          slidesPerView={3}
+          slidesPerView={slidesCount()}
           spaceBetween={30}
           pagination={{ clickable: true }}
           className="h-[20rem] lg:h-[24rem] cursor-grab active:cursor-grabbing"
